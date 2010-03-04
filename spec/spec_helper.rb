@@ -4,6 +4,16 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.dirname(__FILE__) + "/../config/environment" unless defined?(RAILS_ROOT)
 require 'rspec/rails'
 
+Bundler.require :thoughtbot
+
+# Shoulda macros don't seem to work with RSpec 2. When they do, this is where to require them.
+# require 'shoulda'
+# require 'shoulda/rspec'
+
+require 'factory_girl'
+
+# Autoloading of Factories seems to be broken, so manually require the <tt>factories.rb</tt> file
+require File.dirname(__FILE__) + "/../spec/factories.rb"
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
