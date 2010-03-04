@@ -1,24 +1,25 @@
-# Edit this Gemfile to bundle your application's dependencies.
+# Gemfile
 source 'http://gemcutter.org'
 
-
 gem "rails", "3.0.0.beta"
-
-## Bundle edge rails:
-# gem "rails", :git => "git://github.com/rails/rails.git"
-
-# ActiveRecord requires a database adapter. By default,
-# Rails has selected sqlite3.
 gem "sqlite3-ruby", :require => "sqlite3"
 
-## Bundle the gems you use:
-# gem "bj"
-# gem "hpricot", "0.6"
-# gem "sqlite3-ruby", :require => "sqlite3"
-# gem "aws-s3", :require => "aws/s3"
+# Require the haml gem for rendering HAML templates and SASS stylesheets
+gem "haml"
 
-## Bundle gems used only in certain environments:
-# gem "rspec", :group => :test
-# group :test do
-#   gem "webrat"
-# end
+# FactoryGirl and Shoulda Rails 3 development branches from github
+group :thoughtbot do
+  gem "shoulda", :git => "git://github.com/sinefunc/shoulda.git",
+                 :branch => "rails3"
+
+  gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git',
+                      :branch => 'rails3',
+                      :require => "factory_girl"
+end
+
+group :test do
+  # Install development release of rspec (includes rspec-rails)
+  gem "rspec-rails", ">= 2.0.0.a9"
+  gem "webrat"
+  gem "mocha"
+end
