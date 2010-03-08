@@ -7,8 +7,8 @@ require 'rspec/rails'
 Bundler.require :thoughtbot
 
 # Shoulda macros don't seem to work with RSpec 2. When they do, this is where to require them.
-# require 'shoulda'
-# require 'shoulda/rspec'
+#require 'shoulda'
+#require 'shoulda/rspec'
 
 require 'factory_girl'
 

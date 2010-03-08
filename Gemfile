@@ -10,7 +10,8 @@ gem "haml"
 # FactoryGirl and Shoulda Rails 3 development branches from github
 group :thoughtbot do
   gem "shoulda", :git => "git://github.com/sinefunc/shoulda.git",
-                 :branch => "rails3"
+                 :branch => "rails3",
+                 :require => "shoulda"
 
   gem 'factory_girl', :git => 'git://github.com/thoughtbot/factory_girl.git',
                       :branch => 'rails3',
