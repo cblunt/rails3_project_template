@@ -11,10 +11,12 @@ MyApp::Application.routes.draw do |map|
   # This route can be invoked with purchase_url(:id => product.id)
   match 'login' => 'sessions#new', :as => :login
   match 'logout' => 'sessions#destroy', :as => :logout, :method => :delete
+  match 'register' => 'users#new', :as => :register
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resource :session
+  resources :users
 
   # Sample resource route with options:
   #   resources :products do
