@@ -1,0 +1,143 @@
+/* HTML5 reset */
+header, section, footer, aside, nav, article, figure
+  display: block
+
+/* Mixins */
+= centred-block
+  display: block
+  width: 760px
+  margin: 0 auto
+
+/* Page layout */
+body
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 87.5%
+  line-height: 1.5em
+  color: #303030
+
+section
+  +centred-block
+
+  &#content
+    clear: both
+
+header
+  +centred-block
+  margin-top: 50px
+
+footer
+  +centred-block
+  text-align: right
+  color: #909090
+  font-size: 87.5%
+
+nav
+  +centred-block
+  ul
+    list-style: none
+    padding: 0 0
+    margin: 0 auto
+    float: right
+
+    li
+      float: left
+      display: inline
+      margin: 0 0
+
+  a:link, a:visited
+    display: inline-block
+    padding: 5px 1.5em
+    font-weight: bold
+  
+/* Typography */
+p
+  margin-top: 0
+  padding-top: 0
+
+  &.meta
+    color: #909090
+
+a:link, a:visited
+  text-decoration: none
+  color: #369
+
+a:hover
+  color: #69c
+
+h1
+  font-size: 2.5em
+
+  a:link, a:visited
+    color: #303030
+
+  a:hover
+    color: #303030
+
+h3
+  padding-bottom: 0
+  margin-bottom: 0
+
+/* Notifications */
+= flash
+  padding: 5px 10px
+
+.flash_success
+  +flash
+  border: 2px solid #99cc99
+  background: #ddffdd
+
+.flash_notice
+  +flash
+  border: 2px solid #cccc99
+  background: #ffffdd
+
+.flash_error
+  +flash
+  border: 2px solid #cc9999
+  background: #ffdddd
+
+/* Forms */
+fieldset
+  border: none
+  padding: 0 0
+
+  legend
+    font-size: 87.5%
+    color: #909090
+    text-transform: uppercase
+    margin: 0 0
+    padding: 0 0
+
+  ul, ol
+    list-style-type: none
+    padding: 0 0
+
+    li
+      margin-top: 0.5em
+      margin-bottom: 0.5em
+
+      label
+        display: inline-block
+        width: 150px
+        float: left
+
+      .example
+        margin-left: 150px
+        color: #909090
+
+    ol 
+      padding-left: 2em
+      padding-top: 0.5em
+
+= form_input
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 100%
+  
+input[type=text]
+  +form_input 
+
+textarea
+  +form_input 
+
+  &.taskpaper
+    line-height: 1.75em

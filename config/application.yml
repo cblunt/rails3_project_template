@@ -1,0 +1,12 @@
+# Application wide configuration
+defaults: &defaults
+  app_name: NEW RAILS3 PROJECT
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
