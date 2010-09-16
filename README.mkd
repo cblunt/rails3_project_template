@@ -1,0 +1,16 @@
+## Overview
+A blank Rails 3 project configured to the following environment:
+
+  * PostgreSQL database connection
+  * RSpec for testing
+  * FactoryGirl for spec factories / fixtures
+  * Mocha for mocking in specs
+  * Shoulda for additional RSpec macros
+
+## Installation
+  1. Clone a copy of the repository
+  2. Run `bundle install`
+  3. Copy `config/database.yml.sample` to `config/database.yml`
+  4. Edit `config/database.yml` to your environment
+  5. Run `rake db:create`
+  6. Build your app!
