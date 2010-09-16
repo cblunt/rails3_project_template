@@ -7,6 +7,9 @@ gem 'rails', '3.0.0'
 
 gem 'pg'
 
+# HAML/SASS template generators
+gem 'haml-rails'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
