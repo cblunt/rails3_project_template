@@ -1,9 +1,0 @@
-== Installation
-
-1. Clone a copy of the repository
-
-2. Run `bundle install`
-
-2. Copy `config/database.yml.sample` to `config/database.yml`
-
-3. Edit `config/database.yml` to your environment
