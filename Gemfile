@@ -32,4 +32,5 @@ group :development, :test do
   gem "rspec-rails", ">= 2.0.0.beta.22"
   gem "shoulda"
   gem "factory_girl"
+  gem "mocha"
 end
