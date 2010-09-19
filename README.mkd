@@ -8,9 +8,14 @@ A blank Rails 3 project configured to the following environment:
   * Shoulda for additional RSpec macros
 
 ## Installation
-  1. Clone a copy of the repository
+  1. Clone a copy of the repository `git clone git://github.com/cblunt/rails3_project_template.git`
   2. Run `bundle install`
   3. Copy `config/database.yml.sample` to `config/database.yml`
   4. Edit `config/database.yml` to your environment
   5. Run `rake db:create`
   6. Build your app!
+
+## Prefer TestUnit?
+If you'd rather user TestUnit instead of RSpec, add a remote tracking branch to `test_unit`:
+
+    git branch --track test_unit origin/test_unit
