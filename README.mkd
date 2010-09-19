@@ -16,4 +16,6 @@ A blank Rails 3 project configured to the following environment:
   6. Build your app!
 
 ## Prefer TestUnit?
-If you'd rather user TestUnit instead of RSpec, just clone the `test_unit` branch instead of `master`.
+If you'd rather user TestUnit instead of RSpec, add a remote tracking branch to `test_unit`:
+
+    git branch --track test_unit origin/test_unit
